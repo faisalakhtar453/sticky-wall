@@ -43,9 +43,7 @@ export default function Login() {
           <div className="col">
             <div className="card p-3 p-md-4">
               <Title level={2} className="m-0 text-center">Login</Title>
-
               <Divider />
-
               <Form layout="vertical">
                 <Form.Item label="Email">
                   <Input placeholder="Input your email"name="email"onChange={handleChange}/>
@@ -53,7 +51,6 @@ export default function Login() {
                 <Form.Item label="Password">
                   <Input.Password placeholder="Input your password"name="password"onChange={handleChange}/>
                 </Form.Item>
-
                 <Button type="primary"htmlType="submit"className="w-100"loading={isProcessing}onClick={handleLogin}>Login</Button>
               </Form>
               <Link to="/auth/register" className="text-center mt-3 nav-link">Create the account</Link>
